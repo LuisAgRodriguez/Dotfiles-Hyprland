@@ -1,0 +1,170 @@
+{
+"layer": "top", 
+"position": "top",
+"gtk-layer-shell": true,
+"margin-top": 2,
+"height": 20,
+"width": 1350,
+"modules-left": [
+    "custom/menu",
+    "wlr/taskbar"
+],
+"modules-center": [
+    "custom/shearch",
+    "hyprland/workspaces"
+],
+"modules-right": [
+    "pulseaudio",
+    "network",
+    "battery",
+    "backlight",
+    "clock"
+    
+],
+
+//Menu
+"custom/menu": {
+    "format": "",
+    "on-click": "/home/luis/.config/rofi/powermenu.sh",
+    "tooltip": false
+  },
+
+//Busqueda
+"custom/shearch": {
+    "format": "",
+    "on-click": "rofi -show drun",
+    "tooltip": false
+  },
+
+//Barra de tarea
+"wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 16,
+    "icon-theme": "Numix-Circle",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+           "Alacritty"
+    ]},
+
+//Area de trabajo
+"hyprland/workspaces": {
+    "active-only": false,
+    "all-outputs": false,
+    "disable-scroll": false,
+    "on-scroll-up": "hyprctl dispatch workspace -1",
+    "on-scroll-down": "hyprctl dispatch workspace +1",
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+		"4": "四",
+		"5": "五",
+        "urgent": "",
+        "active": " ",
+        "default": "󰧞",
+ "sort-by-number": true
+}
+},
+
+//Audio
+"pulseaudio": {
+    "max-volume": 100,
+    "format": "{icon} {volume}%",
+     "format-muted": "󰖁 ",
+    "format-icons": {
+        "default": [" "," "," "]
+    },
+    "on-click": "bash ~/.scripts/volume mute",
+"on-scroll-up": "bash ~/.scripts/volume up",
+"on-scroll-down": "bash ~/.scripts/volume down",
+"scroll-step": 2,
+    "on-click-right": "pavucontrol"
+},
+
+//Wifi
+"network": {
+    "format-wifi": " {icon}",
+    "format-ethernet": "  ",
+    "format-linked": " {ifname} (No IP)",
+    "format-disconnected": "󰤭",
+    "format-alt": " {ifname}: {ipaddr}/{cidr}",
+    "tooltip-format": "{essid}",
+    "format-icons": [
+        "󰤯 ",
+        "󰤟 ",
+        "󰤢 ",
+        "󰤢 ",
+        "󰤨 "
+    ]
+},
+
+
+//Brillo
+"backlight": {
+    // "device": "acpi_video1",
+"format": "{icon} {percent}%",
+    "format-icons": ["", "", "", "", "", "", "", "", ""]
+//	"on-scroll-up":,
+//	"on-scroll-down":,
+},
+
+ //Bateria
+ "battery": {
+    "states": {
+        "good": 95,
+        "warning": 30,
+        "critical": 20
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": [
+        "󰂎",
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
+    ]
+},
+
+//Hora Y Calendario
+"clock": {
+    "timezone": "America/Argentina/Cordoba",
+		"format": "  {:%R.%p\n %d/%m/%Y}", 
+		"tooltip": "true",
+        	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        	"calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+	},
+	"actions": {
+            "on-click-right": "mode",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    }
+
+}
