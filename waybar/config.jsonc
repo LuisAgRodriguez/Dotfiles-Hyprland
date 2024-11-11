@@ -58,13 +58,13 @@
     "format": "{icon}",
     "on-click": "activate",
     "format-icons": {
-        "1": " ",
-        "2": " ",
-        "3": " ",
+        "1": "",
+        "2": "",
+        "3": "",
 		"4": "四",
 		"5": "五",
         "urgent": "",
-        "active": " ",
+        "active": "",
         "default": "󰧞",
  "sort-by-number": true
 }
@@ -81,13 +81,13 @@
     "on-click": "bash ~/.scripts/volume mute",
 "on-scroll-up": "bash ~/.scripts/volume up",
 "on-scroll-down": "bash ~/.scripts/volume down",
-"scroll-step": 2,
+"scroll-step": false,
     "on-click-right": "pavucontrol"
 },
 
 //Wifi
 "network": {
-    "format-wifi": " {icon}",
+    "format-wifi": "{icon}",
     "format-ethernet": "  ",
     "format-linked": " {ifname} (No IP)",
     "format-disconnected": "󰤭",
@@ -141,7 +141,7 @@
 //Hora Y Calendario
 "clock": {
     "timezone": "America/Argentina/Cordoba",
-		"format": "  {:%R.%p\n %d/%m/%Y}", 
+		"format": "  {:%R %p\n %d/%m/%Y}", 
 		"tooltip": "true",
         	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         	"calendar": {
