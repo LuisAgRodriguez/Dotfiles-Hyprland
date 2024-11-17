@@ -8,15 +8,8 @@
 
   /* Main Background */
 window#waybar {
-    background: repeating-linear-gradient(90deg, 
-        rgba(50, 55, 60, 0.3),
-        rgba(46, 63, 83, 0.2), 
-        rgba(18, 27, 32, 0.61),
-        rgba(46, 63, 83, 0.2),
-        rgba(50, 55, 60, 0.3));
-    border: 2px rgba(45, 60, 65, 0.2);
-    border-radius: 16px;
-    border-style: solid;
+    background-color: rgba(3,12,20,0.3);
+    border-style: none;
   }
 
   /*Menu*/
@@ -111,6 +104,6 @@ window#waybar {
 #clock {
     color: rgb(247, 255, 255);
     padding: 0px 14px 0px 2px;
-    margin-right: 8px;
+    margin-right: 4px;
 }
   

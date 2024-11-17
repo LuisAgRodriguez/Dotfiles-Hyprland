@@ -22,7 +22,7 @@ set inputbar-fg			          rgba(198,208,245,0.6)
 set inputbar-bg 		          rgba(65,69,89,0.6)
 
 set recolor                   "true"
-set recolor-lightcolor		    rgba(22,41,46,0.6)
+set recolor-lightcolor		    rgba(31,31,33,0.6)
 set recolor-darkcolor		      rgba(226,238,232,1)
 
 set index-fg			            rgba(198,208,245,1)

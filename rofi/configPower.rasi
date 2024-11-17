@@ -1,7 +1,7 @@
 configuration{
     modi: "run";
     icon-theme: "Numix-Circle";
-    font: "JetBrains Mono Regular 13";
+    font: "HackNerdDont 13";
     dmenu-icons: true;
     terminal: "wezterm";
     run-display-format: "{icon} {name}";

@@ -4,7 +4,6 @@
 "gtk-layer-shell": true,
 "margin-top": 2,
 "height": 20,
-"width": 1350,
 "modules-left": [
     "custom/menu",
     "wlr/taskbar"
@@ -58,8 +57,8 @@
     "format": "{icon}",
     "on-click": "activate",
     "format-icons": {
-        "1": "",
-        "2": "",
+        "1": "",
+        "2": "󰖟",
         "3": "",
 		"4": "四",
 		"5": "五",
