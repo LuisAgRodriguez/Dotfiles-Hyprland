@@ -2,7 +2,6 @@
 "layer": "top", 
 "position": "top",
 "gtk-layer-shell": true,
-"margin-top": 2,
 "height": 20,
 "modules-left": [
     "custom/menu",

@@ -8,8 +8,9 @@
 
   /* Main Background */
 window#waybar {
-    background-color: rgba(3,12,20,0.3);
+    background-color: #030C14;
     border-style: none;
+    opacity: 0.9;
   }
 
   /*Menu*/

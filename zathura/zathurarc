@@ -1,15 +1,15 @@
 set default-fg                rgba(198,208,245,0.5)
-set default-bg 			          rgba(48,52,70,0.5)
+set default-bg 			          rgba(3,19,27,0.9)
 
 set completion-bg		          rgba(65,69,89,0.6)
 set completion-fg		          rgba(198,208,245,1)
-set completion-highlight-bg	  rgba(87,82,104,0.6)
+set completion-highlight-bg	  rgba(3,19,27,0.9)
 set completion-highlight-fg	  rgba(198,208,245,1)
-set completion-group-bg		    rgba(65,69,89,0.6)
+set completion-group-bg		    rgba(3,19,27,0.9)
 set completion-group-fg		    rgba(140,170,238,1)
 
 set statusbar-fg		          rgba(198,208,245,1)
-set statusbar-bg		          rgba(65,69,89,0.6)
+set statusbar-bg		          rgba(3,19,27,0.9)
 
 set notification-bg		        rgba(65,69,89,0.6)
 set notification-fg		        rgba(198,208,245,0.6)
@@ -19,18 +19,18 @@ set notification-warning-bg	  rgba(65,69,89,0.6)
 set notification-warning-fg	  rgba(250,227,176,0.6)
 
 set inputbar-fg			          rgba(198,208,245,0.6)
-set inputbar-bg 		          rgba(65,69,89,0.6)
+set inputbar-bg 		          rgba(3,19,27,0.6)
 
 set recolor                   "true"
-set recolor-lightcolor		    rgba(31,31,33,0.6)
+set recolor-lightcolor		    rgba(3,17,27,0.6)
 set recolor-darkcolor		      rgba(226,238,232,1)
 
 set index-fg			            rgba(198,208,245,1)
-set index-bg			            rgba(48,52,70,0.6)
+set index-bg			            rgba(3,19,27,0.9)
 set index-active-fg		        rgba(198,208,245,1)
 set index-active-bg		        rgba(65,69,89,0.6)
 
-set render-loading-bg		      rgba(48,52,70,0.6)
+set render-loading-bg		      rgba(3,19,27,0.9)
 set render-loading-fg		      rgba(198,208,245,0.6)
 
 set highlight-color		        rgba(87,82,104,0.5)
